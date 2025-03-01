@@ -1,17 +1,31 @@
-from flask import Flask, render_template
+import os
 
+from flask import Flask
 
-app = Flask(__name__)
+def create_app(test_config=None):
+    #Create a config the application
+    app = Flask(__name__, instance_relative_config=True)
+    app.config.from_mapping(
+        SECRET_KEY = 'dev',
+        DATABASE = os.path.join(app.instance_path, 'e-commerce.sqlite')
+    )
 
-app.debug = True
+    if test_config is None:
+        #loading config instance is there is one when not testing
+        app.config.from_pyfile('config.py', silent = True)
+    else:
+        #loading the test config
+        app.config.from_mapping(test_config)
+    
+    #Check the instance folder existence
+    try:
+        os.makedirs(app.instance_path)
+    except OSError:
+        pass
+    
+    import db,auth
+    db.init_app(app)
+    app.register_blueprint(auth.bp)
+    
 
-if __name__ == "__main__":
-    app.run(debug=True)
-
-@app.route("/", methods=['GET', 'POST'])
-def index():
-    return render_template("index.html")
-
-@app.route("/templates/register", methods=["POST", "GET"])
-def register():
-    return render_template("register.html")
+    return app
