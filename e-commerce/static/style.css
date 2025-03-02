@@ -1,0 +1,23 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(233,233,0,1);
+}
+p{
+    color: rgba(233,233,0,1);
+}
+
+.messages{
+    border-color: rgb(3, 25, 154);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: rgba(89, 104, 194, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    color:  rgb(3, 25, 124);
+    height: 5rem;
+    width: 70rem;
+    text-align: center;
+    margin: auto;
+    align-content: center;
+    display: none;
+}
