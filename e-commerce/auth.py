@@ -81,6 +81,8 @@ def load_logged_in_user():
 @bp.route('/logout')
 def logout():
     session.clear()
+    logout_successfully = 'Logged out successfully'
+    flash(logout_successfully)
     return redirect(url_for('index'))
 
 

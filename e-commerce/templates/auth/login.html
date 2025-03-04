@@ -6,16 +6,20 @@
 
 {% block content %}
 
-<h1>Este es el HTML del login</h1>
+    <h1>Welcome!</h1>
 
-<form method="POST">
-    <label for="username">Username: </label>
-    <input type="text" id="username" name="username" required>
-    <br>
-    <label for="password">Password: </label>
-    <input type="password" id="password" name="password" required>
-    <br>
-    <input type="submit" value="Log In">
-</form>
+    <form method="POST">
+        <div class="form-container">
+                <div class="form-content">
+                    <label class="form-content-label" for="username">Username</label>
+                    <input class="form-content-input" type="text" id="username" name="username" required>
+                </div>
+                <div class="form-content">
+                    <label class="form-content-label" for="password">Password</label>
+                    <input class="form-content-input" type="password" id="password" name="password" required>
+                </div>
+            <input class="form-content-button" type="submit" value="Log In">
+        </div>
+    </form>
 
 {% endblock %}

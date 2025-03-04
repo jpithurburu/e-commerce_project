@@ -1,9 +1,12 @@
-h1{
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgba(233,233,0,1);
+html{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
 }
-p{
-    color: rgba(233,233,0,1);
+
+body{
+    margin: 0px;
+    padding: 0px;
 }
 
 .messages{
@@ -20,4 +23,70 @@ p{
     margin: auto;
     align-content: center;
     display: none;
+}
+
+main{
+    text-align: center;
+    margin: 0.375rem;
+    padding: 0.375rem;
+}
+
+form{
+    /* border: solid darkgoldenrod 1px; */
+    padding: 0.375rem;
+    margin: 0.375rem;
+    align-content: center;
+    text-align: center;
+}
+
+.form-container{
+    margin:auto;
+    /* border: solid black 1px; */
+    width: min-content;
+}
+
+.form-content{
+    position: relative;
+    /* border: solid darkmagenta 1px; */
+    margin: 0.175rem auto;
+    padding: 0.175rem;
+    display: inline-block;
+    width:min-content ;
+}
+
+div label{
+    position: relative;
+    float: left;
+}
+
+div input{
+    border: solid black 1px;
+    width: 18rem;
+    border-radius: 5px;
+}
+
+.form-content-button{
+    transition: background-color 0.3s ease;
+    border: none;
+    margin: 0.175rem 0rem;
+    padding: 0.175rem 0rem;
+    border-radius: 0.3rem;
+    width: 100%;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.form-content-button:hover{
+    background-color: #5077be;
+}
+
+footer{
+    align-content: center;
+    text-align: center;
+    padding: 0.375rem;
+    position: absolute;
+    bottom: 0px;
+    height: 10rem;
+    width: 100%;
+    border: solid 1px red;
 }

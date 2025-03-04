@@ -1,3 +1,4 @@
 LICENCSE
 .venv
-__pycache__
+e-commerce/__pycache__
+.DS_Store
