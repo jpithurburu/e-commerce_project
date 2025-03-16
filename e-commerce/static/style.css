@@ -1,13 +1,50 @@
 html{
     margin: 0;
     padding: 0;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Birthstone", cursive;
+    font-weight: 400;
 }
 
 body{
     margin: 0px;
     padding: 0px;
+    background-image: url(img/register-backgrouund.jpg);
+    background-size: 80%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
+
+h1{
+    font-size: 5rem;
+    color: #333;
+    font-family: "Birthstone", cursive;
+    font-weight: 400;
+}
+
+
+nav li{
+    padding: 0.3rem;
+    font-size: 2rem;
+    font-family: "Birthstone", cursive;
+    font-weight: 400;
+}
+
+.nav-link{
+    width: max-content;
+}
+
+.nav-link:active:hover{
+    color: #5077be;
+    text-shadow: 0.1rem 0.1rem 0.3rem rgba(0,0,0,0.1);
+}
+
+.nav-link:hover{
+    text-shadow: 0.1rem 0.1rem 0.3rem rgba(0,0,0,0.6);
+}
+
+
 
 .messages{
     border-color: rgb(3, 25, 154);
@@ -33,34 +70,58 @@ main{
 
 form{
     /* border: solid darkgoldenrod 1px; */
-    padding: 0.375rem;
-    margin: 0.375rem;
+    /* padding: 0.375rem; */
+    margin: 0.375rem auto;
     align-content: center;
     text-align: center;
+    width: 50%;
 }
 
 .form-container{
     margin:auto;
-    /* border: solid black 1px; */
-    width: min-content;
+    padding: 0.375rem;
+    width: 100%;
+    background-color: rgba(230,230,230, 0.4);
+    border-radius: 20px;
+    box-shadow: 0 0.1rem 0.4rem rgb(0 0 0 / 30%);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-container-left{
+    /* border: solid red 1px; */
+    margin: 5px 0 5px auto;
+    width: 40%;
+}
+
+.form-container-right{
+    /* border: solid green 1px; */
+    margin: 5px auto 5px 0;
+    width: 40%;
+}
+
+.form-container-bottom{
+    margin: auto;
+    /* border: solid blue 1px; */
+    width: 80%;
 }
 
 .form-content{
-    position: relative;
-    /* border: solid darkmagenta 1px; */
     margin: 0.175rem auto;
     padding: 0.175rem;
     display: inline-block;
     width:min-content ;
-}
+}   
 
 div label{
-    position: relative;
     float: left;
+    font-family: "Birthstone", cursive;
+    font-weight: 400;
+    font-size: 24pt;
 }
 
 div input{
-    border: solid black 1px;
+    border: none;
     width: 18rem;
     border-radius: 5px;
 }
@@ -74,6 +135,9 @@ div input{
     width: 100%;
     background-color: cornflowerblue;
     color: white;
+    font-family: "Birthstone", cursive;
+    font-weight: 400;
+    font-size: 24pt;
 }
 
 .form-content-button:hover{
@@ -81,12 +145,35 @@ div input{
 }
 
 footer{
+    background-color: rgba(230,230,230, 0.4);
+    position: absolute;
+    bottom: 0;
     align-content: center;
     text-align: center;
-    padding: 0.375rem;
-    position: absolute;
-    bottom: 0px;
+    padding: 3rem;
     height: 10rem;
     width: 100%;
-    border: solid 1px red;
+    font-family: "Birthstone", cursive;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+footer p{
+    float: left;
+    margin: 0;
+}
+
+.instLinks{
+    float: right;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+    margin: 0.3rem;
+}
+
+footer a:hover{
+    color: white;
+    transition: color 0.3s ease;
 }

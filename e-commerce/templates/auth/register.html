@@ -8,15 +8,49 @@
     <h1>Please sign up!</h1>
     <form method="POST">
         <div class="form-container">
-            <div class="form-content">
-                <label for="username">Username</label>
-                <input id="username" name="username" type="text">
+            <div class="form-container-left">
+                <div class="form-content">
+                    <label for="username">Username</label>
+                    <input id="username" name="username" type="text">
+                </div>
+                <div class="form-content">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password">
+                </div>
+                <div class="form-content">
+                    <label for="repeatPassword">Repeat password</label>
+                    <input id="repeatPassword" name="repeatPassword" type="password">
+                </div>
+                <div class="form-content">
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email">
+                </div>
             </div>
-            <div class="form-content">
-                <label for="password">Password</label>
-                <input id="password" name="password" type="password">
+            <div class="form-container-right">
+                <div class="form-content">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text">
+                </div>
+                <div class="form-content">
+                    <label for="lastName">Last name</label>
+                    <input id="lastName" name="lastName" type="text">
+                </div>
+                <div class="form-content">
+                    <label for="age">Age</label>
+                    <input id="age" name="age" type="number">
+                </div>
+                <div class="form-content">
+                    <label for="country">Country</label>
+                    <input id="country" name="country" type="text">
+                </div>
             </div>
-            <button class="form-content-button" type="submit">Register</button>
+            <div class="form-container-bottom">
+                <div class="form-content">
+                    <label for="avatar">Avatar</label>
+                    <input id="avatar" name="avatar" type="file">
+                </div>
+                <button class="form-content-button" type="submit">Register</button>
+            </div>
         </div>
     </form>
 {% endblock %}
